@@ -7,12 +7,18 @@ for (const buttonDOM of buttonsDOM) {
         const currentEquationValue = equationDOM.innerText;
         let updateEquationValue = currentEquationValue;
 
-        if (buttonValue === 'C') {
-            updateEquationValue = '';
-        } else if (buttonValue === '<=') {
-            updateEquationValue = currentEquationValue.slice(0, -1);
-        } else {
-            updateEquationValue += buttonValue;
+        switch (buttonValue) {
+            case 'C':
+                updateEquationValue = '';
+                break;
+
+            case '<=':
+                updateEquationValue = currentEquationValue.slice(0, -1);
+                break;
+
+            default:
+                updateEquationValue += buttonValue;
+                break;
         }
 
         equationDOM.innerText = updateEquationValue;
