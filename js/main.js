@@ -1,3 +1,11 @@
+/*
+1. susirasti tevini elementa (.calc)
+2. sugeneruoti visa HTML
+3. istatyti i tevini elementa
+4. susirasti visus mygtukus (.key)
+5. mygtukams uzdeti event listener'ius
+*/
+
 const equationDOM = document.querySelector('.equation');
 const buttonsDOM = document.querySelectorAll('.key');
 
